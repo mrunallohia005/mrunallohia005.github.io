@@ -1,0 +1,40 @@
+# Node.js
+node_modules/
+npm-debug.log*
+package-lock.json
+yarn-error.log*
+yarn.lock
+
+# Build files
+dist/
+build/
+out/
+*.min.js
+*.min.css
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# PDF files
+*.pdf
+
+# Logs
+logs
+*.log
+
+# Temporary files
+*~
+#*#
+*.tmp
+*.temp
