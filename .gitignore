@@ -29,6 +29,9 @@ out/
 # PDF files
 *.pdf
 
+#JSON
+*.json
+
 # Logs
 logs
 *.log
