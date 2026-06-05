@@ -5,104 +5,729 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mrunal Lohia - Resume</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <header>
-    <h1>Mrunal Lohia</h1>
-    <h2>Vice President, Senior Principal Solution Architect</h2>
-    <p>
-      <a href="mailto:mrunallohia@gmail.com">mrunallohia@gmail.com</a> |
-      +91‐9703333207 |
-      <a href="https://linkedin.com/in/mrunal-lohia-023" target="_blank">LinkedIn</a>
-    </p>
+  <!-- Animated Background Particles -->
+  <div class="particles" id="particles"></div>
+
+  <!-- Animated Header -->
+  <header class="hero-header" id="hero">
+    <div class="gradient-bg"></div>
+    <div class="header-content">
+      <div class="avatar-container">
+        <div class="avatar-ring"></div>
+        <div class="avatar">
+          <span>ML</span>
+        </div>
+      </div>
+      <h1 class="name" id="typewriter-name">Mrunal Lohia</h1>
+      <p class="tagline">
+        <span class="tagline-item"><i class="fas fa-building"></i> Enterprise Architecture</span>
+        <span class="tagline-separator">•</span>
+        <span class="tagline-item"><i class="fas fa-brain"></i> AI Adoption</span>
+        <span class="tagline-separator">•</span>
+        <span class="tagline-item"><i class="fas fa-cloud"></i> Cloud Optimization</span>
+      </p>
+      <div class="contact-bar">
+        <a href="mailto:mrunallohia@gmail.com" class="contact-item">
+          <i class="fas fa-envelope"></i> mrunallohia@gmail.com
+        </a>
+        <span class="contact-divider"></span>
+        <a href="tel:+919703333207" class="contact-item">
+          <i class="fas fa-phone"></i> +91-9703333207
+        </a>
+        <span class="contact-divider"></span>
+        <a href="https://linkedin.com/in/mrunal-lohia-023" target="_blank" class="contact-item">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        <span class="contact-divider"></span>
+        <a href="https://github.com/mrunallohia005" target="_blank" class="contact-item">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+        <span class="contact-divider"></span>
+        <span class="contact-item location">
+          <i class="fas fa-map-marker-alt"></i> Hyderabad, India
+        </span>
+      </div>
+      <div class="scroll-indicator">
+        <span>Scroll to explore</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </div>
   </header>
 
+  <!-- At a Glance Stats -->
+  <section class="stats-section" id="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card reveal">
+          <div class="stat-icon"><i class="fas fa-calendar-alt"></i></div>
+          <div class="stat-number" data-target="15">0</div>
+          <div class="stat-label">Years of Experience</div>
+        </div>
+        <div class="stat-card reveal">
+          <div class="stat-icon"><i class="fas fa-dollar-sign"></i></div>
+          <div class="stat-number" data-target="3" data-prefix="$" data-suffix="M+">0</div>
+          <div class="stat-label">Total Value Delivered (AWS + Automation)</div>
+        </div>
+        <div class="stat-card reveal">
+          <div class="stat-icon"><i class="fas fa-robot"></i></div>
+          <div class="stat-number" data-target="100" data-suffix="+">0</div>
+          <div class="stat-label">Automations Delivered</div>
+        </div>
+        <div class="stat-card reveal">
+          <div class="stat-icon"><i class="fas fa-users"></i></div>
+          <div class="stat-number" data-target="50" data-suffix="+">0</div>
+          <div class="stat-label">Engineers Led & Mentored</div>
+        </div>
+        <div class="stat-card reveal">
+          <div class="stat-icon"><i class="fas fa-trophy"></i></div>
+          <div class="stat-number" data-target="20" data-suffix="+">0</div>
+          <div class="stat-label">Teams Governed via KPI Hub</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <main class="container">
-    <section>
-      <h3>Summary</h3>
-      <p>Senior Technology Leader with 14+ years of experience delivering enterprise architecture, large-scale engineering programs, AI adoption, cloud cost optimization (AWS), and KPI-driven operational excellence. Expert in building firm-wide governance systems, modernizing engineering practices, and driving automation at scale. Proven track record of leading cross-functional teams, optimizing cloud workloads, designing AI/ML-enabled workflows, and improving engineering predictability and efficiency across organizations.</p>
+    <!-- Summary -->
+    <section class="section summary-section reveal">
+      <div class="section-header">
+        <h3><i class="fas fa-user-tie"></i> Professional Summary</h3>
+        <div class="section-line"></div>
+      </div>
+      <p class="summary-text">
+        Senior Technology Leader with <strong>15+ years</strong> of experience delivering enterprise architecture, large-scale engineering programs, <span class="highlight">AI adoption</span>, cloud cost optimization (AWS), and KPI-driven operational excellence. Expert in building firm-wide governance systems, modernizing engineering practices, and driving automation at scale. Proven track record of leading <strong>50+ engineers</strong>, optimizing <strong>$3M+ in cloud & automation value</strong>, designing AI/ML-enabled workflows, and improving engineering predictability and efficiency across organizations.
+      </p>
     </section>
 
-    <section>
-      <h3>Professional Experience</h3>
-
-      <details>
-        <summary><span class="arrow">▶</span> <strong>VP, Senior Principal Solution Architect – Arcesium</strong> <span class="date">Nov 2022 – Present</span></summary>
-        <ul>
-          <li><p>Built a centralized <strong>KPI Hub</strong> governing 20+ teams, standardizing metrics and improving engineering efficiency by <strong>20–30%</strong>.</p></li><li><p>Designed <strong>Power BI–based KPI dashboards</strong> enabling weekly leadership insights and operational accountability.</p></li><li><p>Led enterprise cloud optimization: <strong>DB CPU optimization</strong>, AWS instance type rightsizing, AMD to Graviton migration, <strong>Kubernetes pod start-up time optimization</strong>, and ECS-based workload shifts—resulting in <strong>$500K+ annual AWS savings</strong>.</p></li><li><p>Drove modernization programs: <strong>Java 17 upgrade</strong>, SDLC standardization, security/vulnerability remediation, and engineering hygiene enforcement.</p></li><li><p>Designed a <strong>firm-level AI usage governance system</strong>, setting consumption controls, quota limits, and ROI tracking for AI workloads.</p></li><li><p>Built an <strong>automated time-tracking system</strong> integrated with Jira + internal tools, eliminating manual reporting across business units.</p></li><li><p>Delivered multiple AI/Automation PoCs:</p><ul><li><p>Ticket automation with <strong>LangChain + LangGraph</strong></p></li><li><p><strong>RAG models</strong> for ticket intelligence and auto‑resolution</p></li><li><p>Custom <strong>MCP servers</strong> enabling multi‑agent orchestration</p></li></ul></li><li><p>Winner, <strong>2024 Global Hackathon</strong> for next-generation automation workflows.</p></li><li><p>Partnered with Engineering Leadership on estimation models, OKR alignment, engineering scorecards, and cross-org delivery governance.</p></li></ul>
-      </details>
-
-      <details>
-        <summary><span class="arrow">▶</span> <strong>Senior Technical Program Manager / EM – Compass</strong> <span class="date">Sep 2020 – Nov 2022</span></summary>
-        <ul>
-          <li><p><em>Engineering Manager</em></p><ul><li><p>Led <strong>17+ mobile engineers</strong> (iOS + Android) delivering features including Contact Management, Chat, and QR-based Contact Sharing.</p></li><li><p>Drove creation of <strong>Design Systems</strong> for Android/iOS ensuring UI consistency, accessibility, and scalable design patterns.</p></li><li><p>Managed sprint planning, technical reviews, code quality, and cross-team integration across mobile + backend orgs.</p></li><li><p>Oversaw release processes, testing strategy, QA alignment, and production readiness.</p></li></ul><p><em>Senior Technical Program Manager</em></p><ul><li><p>Implemented <strong>phase-gate governance</strong>, improving predictability across 10+ programs.</p></li><li><p>Built Jira-based <strong>E2E workflow tracking</strong> covering intake → development → QA → release.</p></li><li><p>Drove OKRs, engineering scorecards, and data-driven KPIs across teams.</p></li><li><p>Rolled out <strong>RACI frameworks</strong>, reducing ambiguity by <strong>90%</strong>.</p></li><li><p>Managed resource planning, risk mitigation, and dependency orchestration with product, design, and infra teams.</p></li></ul></li>
-        </ul>
-      </details>
-
-      <details>
-        <summary><span class="arrow">▶</span> <strong>Manager – Technology Consulting – Ernst & Young (EY)</strong> <span class="date">Oct 2019 – Sep 2020</span></summary>
-        <ul>
-          <li><p>Delivered <strong>technical consulting engagements</strong> across automation, cloud, and analytics for Fortune 500 enterprise clients.</p></li><li><p>Created senior‑leadership <strong>Point‑of‑View (POV) decks</strong>, solution proposals, and custom demos during sales cycles.</p></li><li><p>Drove consulting projects focused on automation strategy, ML‑enhanced workflows, and enterprise architecture design.</p></li><li><p>Played a major role in <strong>client farming</strong>, expanding accounts by identifying adjacent opportunities and delivering measurable business value.</p></li><li><p>Generated <strong>~$0.5M</strong> in business revenue through strategic engagements.</p></li></ul>
-      </details>
-
-      <details>
-        <summary><span class="arrow">▶</span> <strong>Lead Consultant – BayesTree Intelligence</strong> <span class="date">Nov 2017 – Oct 2019</span></summary>
-        <ul>
-          <li><p>Managed <strong>client-facing deployments </strong>for<strong> </strong>Sainapse (AI support platform) on-site for multiple clients, leading requirements, solution design, and custom Python-based automation.</p></li><li><p>Built <strong>custom AI/ML-enhanced automation solutions</strong> tailored to complex client needs to handle support tickets, reducing resolution time by 20%.</p></li><li><p>Delivered <strong>end-to-end project execution</strong>: discovery, design, development, UAT, go-live, and hypercare.</p></li></ul>
-      </details>
-
-      <details>
-        <summary><span class="arrow">▶</span> <strong>Lead Consultant – RPA – EY</strong> <span class="date">Oct 2016 – Nov 2017</span></summary>
-        <ul>
-          <li><p>Designed and deployed <strong>large-scale RPA solutions</strong> using Blue Prism, Automation Anywhere, and UiPath.</p></li><li><p>Contributed to creation of EY’s <strong>Automation Center of Excellence</strong>, defining best practices, governance, and quality frameworks.</p></li><li><p>Led consulting and discovery sessions to identify high‑value automation opportunities for clients.</p></li><li><p>Saved <strong>~50 FTEs</strong> through scalable automation frameworks and strategy development.</p></li><li><p><strong>Reduced automation delivery timelines by 50%</strong> by leveraging reusable components.</p></li></ul>
-      </details>
-
-      <details>
-        <summary><span class="arrow">▶</span> <strong>Consultant – Automation Solutions – Genpact</strong> <span class="date">Nov 2014 – Oct 2016</span></summary>
-        <ul>
-          <li><p>Delivered <strong>100+ automations</strong> across 15+ global customers using a range of automation tools.</p></li><li><p>Built and matured Genpact's <strong>RPA governance model</strong> and best practices playbook.</p></li><li><p>Led and trained multiple teams on automation development, standards, and delivery.</p></li><li><p>Involved in pre-sales consulting and automation strategy workshops.</p></li></ul>
-      </details>
-
-      <details>
-        <summary><span class="arrow">▶</span> <strong>Consultant – Business Analyst – Systems Plus</strong> <span class="date">Dec 2013 – Oct 2014</span></summary>
-        <ul>
-          <li><p>Worked with clients to define business requirements, functional specifications, and solution workflows.</p></li><li><p>Tracked project milestones, resolved execution issues, and delivered insights for executive-level decisions.</p></li><li><p>Collaborated closely with engineering teams to ensure successful implementation and timely delivery </p></li><li><p>Delivered customer demos, product configurations, and post-go-live support</p></li></ul>
-      </details>
-
-      <details>
-        <summary><span class="arrow">▶</span> <strong>Technical Associate – QA – Tech Mahindra</strong> <span class="date">Nov 2010 – Nov 2013</span></summary>
-        <ul>
-          <li><p>Started career as a <strong>Network Engineer</strong>, contributing to the setup of <strong>Airtel's 3G network foundation</strong>.</p></li><li><p>Transitioned to Test Engineering, performing manual testing, regression suites, and writing test cases for telecom clients.</p></li><li><p>Contributed to the creation of an <strong>automation framework using Selenium</strong>, reducing regression effort.</p></li></ul>
-      </details>
+    <!-- Technical Expertise (ATS Keywords) -->
+    <section class="section expertise-section reveal">
+      <div class="section-header">
+        <h3><i class="fas fa-star"></i> Technical Expertise</h3>
+        <div class="section-line"></div>
+      </div>
+      <div class="expertise-grid">
+        <div class="expertise-category">
+          <span class="expertise-tag">Python</span>
+          <span class="expertise-tag">Java</span>
+          <span class="expertise-tag">Kotlin</span>
+          <span class="expertise-tag">Swift</span>
+          <span class="expertise-tag">JavaScript</span>
+        </div>
+        <div class="expertise-category">
+          <span class="expertise-tag">AWS</span>
+          <span class="expertise-tag">Lambda</span>
+          <span class="expertise-tag">EKS</span>
+          <span class="expertise-tag">ECS</span>
+          <span class="expertise-tag">DynamoDB</span>
+        </div>
+        <div class="expertise-category">
+          <span class="expertise-tag">LangChain</span>
+          <span class="expertise-tag">LangGraph</span>
+          <span class="expertise-tag">RAG</span>
+          <span class="expertise-tag">MCP Servers</span>
+          <span class="expertise-tag">AI/ML</span>
+        </div>
+        <div class="expertise-category">
+          <span class="expertise-tag">RPA</span>
+          <span class="expertise-tag">UiPath</span>
+          <span class="expertise-tag">Blue Prism</span>
+          <span class="expertise-tag">Selenium</span>
+          <span class="expertise-tag">Automation</span>
+        </div>
+        <div class="expertise-category">
+          <span class="expertise-tag">Power BI</span>
+          <span class="expertise-tag">Looker</span>
+          <span class="expertise-tag">PostgreSQL</span>
+          <span class="expertise-tag">Redis</span>
+          <span class="expertise-tag">Datadog</span>
+        </div>
+        <div class="expertise-category">
+          <span class="expertise-tag">Kubernetes</span>
+          <span class="expertise-tag">Docker</span>
+          <span class="expertise-tag">CI/CD</span>
+          <span class="expertise-tag">Jira</span>
+          <span class="expertise-tag">Git</span>
+        </div>
+      </div>
     </section>
 
-    <section>
-      <h3>Skills</h3>
-      <p><strong>Programming Languages:</strong> Python, Kotlin, Swift, Java, JavaScript, PowerShell, VBScript, Shell Scripting</p>
-      <p><strong>Cloud & Infrastructure (AWS):</strong> S3, EC2, Redshift, RDS, ECS/ECR, EKS, Lambda, DynamoDB, Bedrock, Knowledge Base, IAM, SNS/SQS, Billing Console, AWS Trusted Advisor</p>
-      <p><strong>Automation & AI/ML:</strong> LangChain, LangGraph, RAG Pipelines, MCP Servers, Blue Prism, Automation Anywhere, UiPath, Selenium</p>
-      <p><strong>Data, Analytics & Observability:</strong> PostgreSQL, SQL Server, SQLite, MySQL, Power BI, Apache Superset, Looker, KPI Framework Design, Redis, Data Modeling, ETL/ELT Pipelines, Datadog, Grafana</p>
-      <p><strong>Tools & Platforms:</strong> VS Code, Pycharm, Android Studio, Xcode, Visio, Lucid Charts, Git, Jira, Confluence, Intellij, Lucidchart, Figma/Adobe XD, Postman, CI/CD Pipelines, Jenkins, GitHub Actions, Mermaid, Project Plan</p>
+    <!-- Professional Experience -->
+    <section class="section experience-section reveal">
+      <div class="section-header">
+        <h3><i class="fas fa-briefcase"></i> Professional Experience</h3>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="timeline">
+        <!-- Arcesium -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-line"></div>
+          <div class="experience-card hover-lift">
+            <div class="card-header">
+              <div class="company-info">
+                <h4>Arcesium</h4>
+                <span class="company-tag">Cloud & AI Technology</span>
+              </div>
+              <div class="card-meta">
+                <span class="date-badge">
+                  <i class="far fa-calendar"></i> Nov 2022 – Present
+                </span>
+                <span class="role-badge vp">VP, Senior Principal Solution Architect</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="achievement-callout">
+                <i class="fas fa-chart-line"></i>
+                <span><strong>KPI Hub</strong> — 20+ teams governed, <strong>20–30%</strong> efficiency gain</span>
+              </div>
+              <div class="achievement-callout green">
+                <i class="fas fa-piggy-bank"></i>
+                <span><strong>$500K+</strong> annual AWS savings delivered</span>
+              </div>
+              <ul class="bullet-list">
+                <li>Built a centralized <strong>KPI Hub</strong> governing 20+ teams, standardizing metrics and improving engineering efficiency by <strong>20–30%</strong></li>
+                <li>Designed <strong>Power BI–based KPI dashboards</strong> enabling weekly leadership insights and operational accountability</li>
+                <li>Led enterprise cloud optimization: <strong>DB CPU optimization</strong>, AWS instance type rightsizing, AMD to Graviton migration, <strong>Kubernetes pod start-up time optimization</strong>, and ECS-based workload shifts—resulting in <strong>$500K+ annual AWS savings</strong></li>
+                <li>Drove modernization programs: <strong>Java 17 upgrade</strong>, SDLC standardization, security/vulnerability remediation, and engineering hygiene enforcement</li>
+                <li>Designed a <strong>firm-level AI usage governance system</strong>, setting consumption controls, quota limits, and ROI tracking for AI workloads</li>
+                <li>Built an <strong>automated time-tracking system</strong> integrated with Jira + internal tools, eliminating manual reporting across business units</li>
+                <li>Delivered multiple AI/Automation PoCs:
+                  <ul class="sub-bullets">
+                    <li>Ticket automation with <strong>LangChain + LangGraph</strong></li>
+                    <li><strong>RAG models</strong> for ticket intelligence and auto-resolution</li>
+                    <li>Custom <strong>MCP servers</strong> enabling multi-agent orchestration</li>
+                  </ul>
+                </li>
+                <li><span class="award-badge"><i class="fas fa-trophy"></i> Winner, 2024 Global Hackathon</span> for next-generation automation workflows</li>
+                <li>Partnered with Engineering Leadership on estimation models, OKR alignment, engineering scorecards, and cross-org delivery governance</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Compass -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-line"></div>
+          <div class="experience-card hover-lift">
+            <div class="card-header">
+              <div class="company-info">
+                <h4>Compass</h4>
+                <span class="company-tag">Real Estate Technology</span>
+              </div>
+              <div class="card-meta">
+                <span class="date-badge">
+                  <i class="far fa-calendar"></i> Sep 2020 – Nov 2022
+                </span>
+                <span class="role-badge spm">Senior TPMP / Engineering Manager</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="achievement-callout purple">
+                <i class="fas fa-mobile-alt"></i>
+                <span><strong>17+ mobile engineers</strong> led across iOS + Android</span>
+              </div>
+              <div class="achievement-callout orange">
+                <i class="fas fa-project-diagram"></i>
+                <span><strong>90% reduction</strong> in RACI ambiguity</span>
+              </div>
+              <div class="role-section">
+                <h5 class="role-title"><i class="fas fa-users-cog"></i> Engineering Manager</h5>
+                <ul class="bullet-list">
+                  <li>Led <strong>17+ mobile engineers</strong> (iOS + Android) delivering features including Contact Management, Chat, and QR-based Contact Sharing</li>
+                  <li>Drove creation of <strong>Design Systems</strong> for Android/iOS ensuring UI consistency, accessibility, and scalable design patterns</li>
+                  <li>Managed sprint planning, technical reviews, code quality, and cross-team integration across mobile + backend orgs</li>
+                  <li>Oversaw release processes, testing strategy, QA alignment, and production readiness</li>
+                </ul>
+              </div>
+              <div class="role-section">
+                <h5 class="role-title"><i class="fas fa-tasks"></i> Senior Technical Program Manager</h5>
+                <ul class="bullet-list">
+                  <li>Implemented <strong>phase-gate governance</strong>, improving predictability across 10+ programs</li>
+                  <li>Built Jira-based <strong>E2E workflow tracking</strong> covering intake → development → QA → release</li>
+                  <li>Drove OKRs, engineering scorecards, and data-driven KPIs across teams</li>
+                  <li>Rolled out <strong>RACI frameworks</strong>, reducing ambiguity by <strong>90%</strong></li>
+                  <li>Managed resource planning, risk mitigation, and dependency orchestration with product, design, and infra teams</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- EY Consulting -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-line"></div>
+          <div class="experience-card hover-lift">
+            <div class="card-header">
+              <div class="company-info">
+                <h4>Ernst & Young (EY)</h4>
+                <span class="company-tag">Professional Services & Consulting</span>
+              </div>
+              <div class="card-meta">
+                <span class="date-badge">
+                  <i class="far fa-calendar"></i> Oct 2019 – Sep 2020
+                </span>
+                <span class="role-badge manager">Manager – Technology Consulting</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="achievement-callout green">
+                <i class="fas fa-hand-holding-usd"></i>
+                <span><strong>$0.5M</strong> business revenue generated</span>
+              </div>
+              <ul class="bullet-list">
+                <li>Delivered <strong>technical consulting engagements</strong> across automation, cloud, and analytics for Fortune 500 enterprise clients</li>
+                <li>Created senior-leadership <strong>Point-of-View (POV) decks</strong>, solution proposals, and custom demos during sales cycles</li>
+                <li>Drove consulting projects focused on automation strategy, ML-enhanced workflows, and enterprise architecture design</li>
+                <li>Played a major role in <strong>client farming</strong>, expanding accounts by identifying adjacent opportunities and delivering measurable business value</li>
+                <li>Generated <strong>~$0.5M</strong> in business revenue through strategic engagements</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- BayesTree -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-line"></div>
+          <div class="experience-card hover-lift">
+            <div class="card-header">
+              <div class="company-info">
+                <h4>BayesTree Intelligence</h4>
+                <span class="company-tag">AI/ML Startup</span>
+              </div>
+              <div class="card-meta">
+                <span class="date-badge">
+                  <i class="far fa-calendar"></i> Nov 2017 – Oct 2019
+                </span>
+                <span class="role-badge lead">Lead Consultant</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <ul class="bullet-list">
+                <li>Managed <strong>client-facing deployments</strong> for Sainapse (AI support platform) on-site for multiple clients, leading requirements, solution design, and custom Python-based automation</li>
+                <li>Built <strong>custom AI/ML-enhanced automation solutions</strong> tailored to complex client needs to handle support tickets, reducing resolution time by <strong>20%</strong></li>
+                <li>Delivered <strong>end-to-end project execution</strong>: discovery, design, development, UAT, go-live, and hypercare</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- EY RPA -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-line"></div>
+          <div class="experience-card hover-lift">
+            <div class="card-header">
+              <div class="company-info">
+                <h4>Ernst & Young (EY) – RPA</h4>
+                <span class="company-tag">Automation Center of Excellence</span>
+              </div>
+              <div class="card-meta">
+                <span class="date-badge">
+                  <i class="far fa-calendar"></i> Oct 2016 – Nov 2017
+                </span>
+                <span class="role-badge lead">Lead Consultant – RPA</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="achievement-callout blue">
+                <i class="fas fa-industry"></i>
+                <span><strong>50 FTEs</strong> saved through scalable automation</span>
+              </div>
+              <ul class="bullet-list">
+                <li>Designed and deployed <strong>large-scale RPA solutions</strong> using Blue Prism, Automation Anywhere, and UiPath</li>
+                <li>Contributed to creation of EY's <strong>Automation Center of Excellence</strong>, defining best practices, governance, and quality frameworks</li>
+                <li>Led consulting and discovery sessions to identify high-value automation opportunities for clients</li>
+                <li>Saved <strong>~50 FTEs</strong> through scalable automation frameworks and strategy development</li>
+                <li><strong>Reduced automation delivery timelines by 50%</strong> by leveraging reusable components</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Genpact -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-line"></div>
+          <div class="experience-card hover-lift">
+            <div class="card-header">
+              <div class="company-info">
+                <h4>Genpact</h4>
+                <span class="company-tag">Global Enterprise Services</span>
+              </div>
+              <div class="card-meta">
+                <span class="date-badge">
+                  <i class="far fa-calendar"></i> Nov 2014 – Oct 2016
+                </span>
+                <span class="role-badge lead">Consultant – Automation Solutions</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="achievement-callout">
+                <i class="fas fa-robot"></i>
+                <span><strong>100+ automations</strong> across 15+ global customers</span>
+              </div>
+              <ul class="bullet-list">
+                <li>Delivered <strong>100+ automations</strong> across 15+ global customers using a range of automation tools</li>
+                <li>Built and matured Genpact's <strong>RPA governance model</strong> and best practices playbook</li>
+                <li>Led and trained multiple teams on automation development, standards, and delivery</li>
+                <li>Involved in pre-sales consulting and automation strategy workshops</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Systems Plus -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-line"></div>
+          <div class="experience-card hover-lift">
+            <div class="card-header">
+              <div class="company-info">
+                <h4>Systems Plus</h4>
+                <span class="company-tag">Technology Consulting</span>
+              </div>
+              <div class="card-meta">
+                <span class="date-badge">
+                  <i class="far fa-calendar"></i> Dec 2013 – Oct 2014
+                </span>
+                <span class="role-badge consultant">Consultant – Business Analyst</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <ul class="bullet-list">
+                <li>Worked with clients to define business requirements, functional specifications, and solution workflows</li>
+                <li>Tracked project milestones, resolved execution issues, and delivered insights for executive-level decisions</li>
+                <li>Collaborated closely with engineering teams to ensure successful implementation and timely delivery</li>
+                <li>Delivered customer demos, product configurations, and post-go-live support</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tech Mahindra -->
+        <div class="timeline-item last-item">
+          <div class="timeline-marker"></div>
+          <div class="experience-card hover-lift">
+            <div class="card-header">
+              <div class="company-info">
+                <h4>Tech Mahindra</h4>
+                <span class="company-tag">Telecom & Technology</span>
+              </div>
+              <div class="card-meta">
+                <span class="date-badge">
+                  <i class="far fa-calendar"></i> Nov 2010 – Nov 2013
+                </span>
+                <span class="role-badge qa">Technical Associate – QA</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <ul class="bullet-list">
+                <li>Started career as a <strong>Network Engineer</strong>, contributing to the setup of <strong>Airtel's 3G network foundation</strong></li>
+                <li>Transitioned to Test Engineering, performing manual testing, regression suites, and writing test cases for telecom clients</li>
+                <li>Contributed to the creation of an <strong>automation framework using Selenium</strong>, reducing regression effort</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section>
-      <h3>Certifications</h3>
-      <ul>
-        <li>AWS Developer Associate</li>
-        <li>Blue Prism Certified Professional</li>
-        <li>Automation Anywhere Certified Professional</li>
-      </ul>
+    <!-- Skills with Progress Bars -->
+    <section class="section skills-section reveal">
+      <div class="section-header">
+        <h3><i class="fas fa-code"></i> Technical Skills</h3>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h5 class="skill-group-title"><i class="fas fa-code"></i> Programming Languages</h5>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Python</span>
+              <span class="skill-level">Expert</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="95"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Java</span>
+              <span class="skill-level">Advanced</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Kotlin / Swift</span>
+              <span class="skill-level">Advanced</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">JavaScript</span>
+              <span class="skill-level">Advanced</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">PowerShell / Shell</span>
+              <span class="skill-level">Proficient</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h5 class="skill-group-title"><i class="fas fa-cloud"></i> Cloud & AWS Services</h5>
+          <div class="skill-tags">
+            <span class="skill-tag large">EC2</span>
+            <span class="skill-tag large">S3</span>
+            <span class="skill-tag large">Lambda</span>
+            <span class="skill-tag large">EKS</span>
+            <span class="skill-tag large">ECS</span>
+            <span class="skill-tag large">RDS</span>
+            <span class="skill-tag large">DynamoDB</span>
+            <span class="skill-tag large">Bedrock</span>
+            <span class="skill-tag">Redshift</span>
+            <span class="skill-tag">IAM</span>
+            <span class="skill-tag">SNS/SQS</span>
+            <span class="skill-tag">Billing Console</span>
+            <span class="skill-tag">Trusted Advisor</span>
+            <span class="skill-tag">Cost Explorer</span>
+            <span class="skill-tag">Savings Plans</span>
+            <span class="skill-tag">Spot Instance Advisor</span>
+            <span class="skill-tag">AWS Budgets</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h5 class="skill-group-title"><i class="fas fa-brain"></i> AI / ML & Automation</h5>
+          <div class="skill-tags">
+            <span class="skill-tag large">LangChain</span>
+            <span class="skill-tag large">LangGraph</span>
+            <span class="skill-tag large">RAG</span>
+            <span class="skill-tag large">MCP Servers</span>
+            <span class="skill-tag large">Claude Code</span>
+            <span class="skill-tag large">OpenCode</span>
+            <span class="skill-tag large">Codex</span>
+            <span class="skill-tag large">Cursor</span>
+            <span class="skill-tag">GitHub Copilot</span>
+            <span class="skill-tag">Windsurf</span>
+            <span class="skill-tag">Codeium</span>
+            <span class="skill-tag">Tabby</span>
+            <span class="skill-tag">Selenium</span>
+            <span class="skill-tag">UiPath</span>
+            <span class="skill-tag">Blue Prism</span>
+            <span class="skill-tag">Automation Anywhere</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h5 class="skill-group-title"><i class="fas fa-database"></i> Data & Analytics</h5>
+          <div class="skill-tags">
+            <span class="skill-tag large">PostgreSQL</span>
+            <span class="skill-tag large">SQL Server</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">SQLite</span>
+            <span class="skill-tag">Redis</span>
+            <span class="skill-tag">Power BI</span>
+            <span class="skill-tag">Looker</span>
+            <span class="skill-tag">Apache Superset</span>
+            <span class="skill-tag">Data Modeling</span>
+            <span class="skill-tag">ETL/ELT</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h5 class="skill-group-title"><i class="fas fa-tools"></i> Tools & Platforms</h5>
+          <div class="skill-tags">
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">PyCharm</span>
+            <span class="skill-tag">Android Studio</span>
+            <span class="skill-tag">Xcode</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">Jira</span>
+            <span class="skill-tag">Confluence</span>
+            <span class="skill-tag">CI/CD</span>
+            <span class="skill-tag">Jenkins</span>
+            <span class="skill-tag">GitHub Actions</span>
+            <span class="skill-tag">Figma</span>
+            <span class="skill-tag">Postman</span>
+            <span class="skill-tag">Datadog</span>
+            <span class="skill-tag">Grafana</span>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section>
-      <h3>Education</h3>
-      <p>Bachelor of Engineering – Electronics & Telecommunication<br />
-      Vivekananda Education Society’s Institute of Technology, Mumbai (2006 – 2010)</p>
+    <!-- Certifications -->
+    <section class="section certifications-section reveal">
+      <div class="section-header">
+        <h3><i class="fas fa-award"></i> Certifications</h3>
+        <div class="section-line"></div>
+      </div>
+      <div class="cert-grid">
+        <div class="cert-card hover-lift">
+          <div class="cert-icon aws">
+            <i class="fas fa-cloud"></i>
+          </div>
+          <div class="cert-info">
+            <h5>AWS Developer Associate</h5>
+            <span class="cert-issuer">Amazon Web Services</span>
+          </div>
+        </div>
+        <div class="cert-card hover-lift">
+          <div class="cert-icon blue">
+            <i class="fas fa-robot"></i>
+          </div>
+          <div class="cert-info">
+            <h5>Blue Prism Certified Professional</h5>
+            <span class="cert-issuer">Pega Systems</span>
+          </div>
+        </div>
+        <div class="cert-card hover-lift">
+          <div class="cert-icon orange">
+            <i class="fas fa-cogs"></i>
+          </div>
+          <div class="cert-info">
+            <h5>Automation Anywhere Certified Professional</h5>
+            <span class="cert-issuer">Automation Anywhere</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section education-section reveal">
+      <div class="section-header">
+        <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+        <div class="section-line"></div>
+      </div>
+      <div class="education-card hover-lift">
+        <div class="edu-icon">
+          <i class="fas fa-university"></i>
+        </div>
+        <div class="edu-info">
+          <h5>Bachelor of Engineering – Electronics & Telecommunication</h5>
+          <p class="edu-institution">Vivekananda Education Society's Institute of Technology, Mumbai</p>
+          <span class="edu-year"><i class="far fa-calendar"></i> 2006 – 2010</span>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Mrunal Lohia. All rights reserved.</p>
+  <!-- Footer -->
+  <footer class="resume-footer">
+    <div class="footer-content">
+      <div class="footer-buttons">
+        <button class="footer-btn" onclick="window.print()" title="Download as PDF">
+          <i class="fas fa-file-pdf"></i> Download PDF
+        </button>
+      </div>
+      <p>&copy; 2026 Mrunal Lohia. All rights reserved.</p>
+    </div>
   </footer>
+
+  <script>
+    // Particle Animation
+    function createParticles() {
+      const container = document.getElementById('particles');
+      const particleCount = 40;
+      for (let i = 0; i < particleCount; i++) {
+        const particle = document.createElement('div');
+        particle.className = 'particle';
+        particle.style.left = Math.random() * 100 + '%';
+        particle.style.animationDuration = (Math.random() * 15 + 10) + 's';
+        particle.style.animationDelay = (Math.random() * 10) + 's';
+        particle.style.width = (Math.random() * 4 + 2) + 'px';
+        particle.style.height = particle.style.width;
+        container.appendChild(particle);
+      }
+    }
+
+    // Typewriter Effect
+    function typewriterEffect() {
+      const nameEl = document.getElementById('typewriter-name');
+      const text = nameEl.textContent;
+      nameEl.textContent = '';
+      nameEl.classList.add('typing');
+      let i = 0;
+      function type() {
+        if (i < text.length) {
+          nameEl.textContent += text.charAt(i);
+          i++;
+          setTimeout(type, 120);
+        } else {
+          nameEl.classList.remove('typing');
+          nameEl.classList.add('typed');
+        }
+      }
+      setTimeout(type, 500);
+    }
+
+    // Animated Counter
+    function animateCounter(el) {
+      const target = parseInt(el.dataset.target);
+      const prefix = el.dataset.prefix || '';
+      const suffix = el.dataset.suffix || '';
+      const duration = 2000;
+      const start = performance.now();
+      
+      function update(now) {
+        const elapsed = now - start;
+        const progress = Math.min(elapsed / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        const current = Math.floor(eased * target);
+        el.textContent = prefix + current + suffix;
+        if (progress < 1) requestAnimationFrame(update);
+        else el.textContent = prefix + target + suffix;
+      }
+      requestAnimationFrame(update);
+    }
+
+    // Intersection Observer for scroll animations
+    function setupScrollAnimations() {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+            
+            // Animate counters
+            const counters = entry.target.querySelectorAll('.stat-number[data-target]');
+            counters.forEach(c => animateCounter(c));
+            
+            // Animate skill bars
+            const skillBars = entry.target.querySelectorAll('.skill-fill');
+            skillBars.forEach(bar => {
+              setTimeout(() => {
+                bar.style.width = bar.dataset.width + '%';
+              }, 300);
+            });
+          }
+        });
+      }, { threshold: 0.15 });
+
+      document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    }
+
+    // Initialize
+    document.addEventListener('DOMContentLoaded', () => {
+      createParticles();
+      typewriterEffect();
+      setupScrollAnimations();
+    });
+  </script>
 </body>
 </html>
