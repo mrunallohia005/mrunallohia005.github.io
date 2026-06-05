@@ -740,11 +740,28 @@
       }, 200);
     }
 
-    // Initialize
-    document.addEventListener('DOMContentLoaded', () => {
+    // Initialize everything on window load (ensures all elements are rendered)
+    window.addEventListener('load', () => {
       createParticles();
       typewriterEffect();
-      setupScrollAnimations();
+      
+      // First trigger all animations immediately
+      setTimeout(() => {
+        // Add in-view classes to all reveal elements
+        document.querySelectorAll('.reveal').forEach(el => {
+          el.classList.add('in-view');
+        });
+        
+        // Animate all stat counters
+        document.querySelectorAll('.stat-number[data-target]').forEach(counter => {
+          animateCounter(counter);
+        });
+        
+        // Animate all skill bars
+        document.querySelectorAll('.skill-fill').forEach(bar => {
+          bar.style.width = bar.dataset.width + '%';
+        });
+      }, 300);
     });
   </script>
 </body>
