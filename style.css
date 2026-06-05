@@ -1350,21 +1350,42 @@ body {
     gap: 6px;
   }
   
+  .tagline-item {
+    margin-bottom: 2px;
+    width: 100%;
+    justify-content: center;
+  }
+  
   .stats-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
   }
   
   .stat-card {
-    padding: 15px 8px;
+    padding: 12px 6px;
   }
   
   .stat-number {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
   }
   
   .stat-label {
-    font-size: 0.68rem;
+    font-size: 0.7rem;
+  }
+  
+  .contact-item {
+    font-size: 0.82rem;
+    padding: 3px 6px;
+  }
+  
+  .contact-divider {
+    width: 20px;
+    height: 1px;
+  }
+  
+  .skill-tag {
+    max-width: 120px;
+    word-wrap: break-word;
   }
   
   .expertise-grid {
